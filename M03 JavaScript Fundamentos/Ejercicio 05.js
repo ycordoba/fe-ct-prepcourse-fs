@@ -8,7 +8,18 @@ function esPositivo(num) {
    // Si el número es negativo ---> "Es negativo".
    // Si el número es 0, devuelve false.
    // Tu código:
+   if(num > 0){
+      return "es positivo";
+   }else if(num < 0){
+      return "es negativo";
+   }else {
+      return false;
+   }
 }
+
+console.log (esPositivo(-46));
+console.log (esPositivo(12));
+console.log (esPositivo(0));
 
 function agregarSimboloExclamacion(str) {
    // Agrega un símbolo de exclamación al final del string "str" y retórnalo
@@ -26,6 +37,8 @@ function obtenerSaludo(nombre) {
    // Toma el string "nombre" y concatena otra string en la cadena para que tome la siguiente forma:
    // Ejemplo: "Martin" ---> "Hola Martin!"
    // Tu código:
+   return 'hola' + nombre +'!';
+   console.log(obtenerSaludo('fatima'));
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
@@ -59,7 +72,7 @@ function esVocal(letra) {
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
 module.exports = {
-   esPositivo,
+ esPositivo,
    agregarSimboloExclamacion,
    combinarNombres,
    obtenerSaludo,
